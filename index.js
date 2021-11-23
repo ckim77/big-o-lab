@@ -12,10 +12,10 @@ function printNumbers(numbers) {
   }
   
 // Q: Given an array of numbers, what is the time complexity of this function?
-// ANSWER:
+// ANSWER: O(n)
 
 // Q: What is the space complexity?
-// ANSWER:
+// ANSWER: O(n)
 
 
 
@@ -38,14 +38,20 @@ function findFourth(numbers) {
   }
 
 // Q: What is the time complexity of of this solution?
-// ANSWER:
+// ANSWER: O(1)
 
 // Q: Given an array of numbers, what is the space complexity of this function?
-// ANSWER:
+// ANSWER: O(N)
 
 
 // Q: Could you come up with a solution that has a better time complexity? If so, write out that solution and note the time complexity. If not, why not?
-// ANSWER:
+// ANSWER: 
+
+// function fouthIndex(arr) {
+//   return arr[5]
+// }
+
+// This function would have the same time complexity.
 
 
 // 3) -------------------------------------------------------
@@ -55,10 +61,10 @@ function printA() {
     }
 }
 // Q: What is the time complexity of this function?
-// ANSWER:
+// ANSWER: O(1)
 
 // Q: What is the space complexity of this function?
-// ANSWER:
+// ANSWER: O(1)
 
 // 4) -------------------------------------------------------
 function printB(number) {
@@ -67,10 +73,10 @@ function printB(number) {
   }
 }
 // Q: What is the time complexity of this function?
-// ANSWER:
+// ANSWER: O(n)
 
 // Q: What is the space complexity of this function?
-// ANSWER:
+// ANSWER: O(n)
 
 
 
@@ -83,10 +89,10 @@ function printC(num, arr) {
   }
 }
 // Q: What is the time complexity of this function?
-// ANSWER:
+// ANSWER: O(n^2)
 
 // Q: What is the space complexity of this function?
-// ANSWER:
+// ANSWER: O(n^2)
 
 
 // 6) -------------------------------------------------------
@@ -98,10 +104,10 @@ function nested(numbers) {
     }
   }
 // Q: What is the time complexity of this function?
-// ANSWER:
+// ANSWER: O(n^2)
 
 // Q: What is the space complexity of this function?
-// ANSWER:
+// ANSWER: O(n^2)
 
 
 
@@ -112,10 +118,10 @@ let newNumbersA = numbers.filter((num) => {
   return num < 5
 })
 // Q: What is the time complexity of the filter higher-order function?
-// ANSWER:
+// ANSWER: O(n)
 
 // Q: What is the space complexity of the filter higher-order function?
-// ANSWER:
+// ANSWER: O(n)
 
 
 // 8) -------------------------------------------------------
@@ -124,12 +130,10 @@ let newNumbersB = numbers.map((num) => {
   return num * 3
 })
 // Q: What is the time complexity of the map higher-order function?
-// ANSWER:
+// ANSWER:O(n)
 
 // Q: What is the space complexity of the map higher-order function?
-// ANSWER:
-
-
+// ANSWER: O(n)
 
 
 
@@ -142,7 +146,7 @@ function removeNum() {
     numbers.splice(3,1)
 }
 // Q: What is the time complexity of the function?
-// ANSWER:
+// ANSWER: O(1)
 
 
 // 10) -------------------------------------------------------
@@ -150,7 +154,7 @@ function insertNum() {
     numbers.splice(3, 0, 19)
 }
 // Q: What is the time complexity of the function?
-// ANSWER:
+// ANSWER: O(1)
 
 
 // 11) -------------------------------------------------------
@@ -158,7 +162,7 @@ function pushNum() {
     numbers.push(25)
 }
 // Q: What is the time complexity of the function?
-// ANSWER:
+// ANSWER: O(1)
 
 
 // 12) -------------------------------------------------------
@@ -169,7 +173,7 @@ function printFirstTwoNames(array) {
 }
 
 // Q: What is the time complexity of the function? 
-// ANSWER:
+// ANSWER: O(1)
 
 
 
@@ -194,7 +198,7 @@ function arrInception(parentArr) {
     }
   }
   // Q: What is the space complexity of this function?
-  // ANSWER:
+  // ANSWER: O(n^2)
   
   
 // 14) You are challenged to find the squared value of each number in an array. This is not the best solution, but it is what you come up with anyway...
@@ -212,11 +216,19 @@ function getNumbersSquared(numbers) {
 }
 
 // Q: What is the space complexity of this function?
-// ANSWER:
+// ANSWER: O(n)
 
 
 // Q: Is it possible to improve this function's space complexity? If it is, write a new function below.
 // ANSWER:
+
+// function getNumbersSquared(numbers) {
+//   let answers = []
+//   for (let i = 0; i < numbers.length; i++) {
+//     answers.push(numbers[i] * numbers[i])
+//   }
+//   return answers
+// }
 
 
 // 15) Here are two functions that you came up with to count how many of each letter is in a given string and return an object with the individual counts: 
